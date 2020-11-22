@@ -20,6 +20,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import {HomeScreen} from './screens/Home.js';
 import {RegistrationScreen} from './screens/MainRegistration.js';
+import {LoginPage} from './screens/Login.js';
 
 const App: () => React$Node = () => {
   return (
@@ -34,6 +35,11 @@ const App: () => React$Node = () => {
           <NavComponent.Screen
             name="MainRegistration"
             component={RegistrationScreen}
+
+          />
+          <NavComponent.Screen
+            name="Login"
+            component={LoginPage}
 
           />
           <NavComponent.Screen
